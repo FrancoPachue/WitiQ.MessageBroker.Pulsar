@@ -30,7 +30,7 @@ namespace WitiQ.MessageBroker.Pulsar.Core.Services
 
         public string Topic { get; }
         public string SubscriptionName { get; }
-        public bool IsConnected => true; // Simplificado
+        public bool IsConnected => true;
 
         public async Task<WitiQPulsarMessage<T>> ReceiveAsync(CancellationToken cancellationToken = default)
         {
@@ -41,7 +41,6 @@ namespace WitiQ.MessageBroker.Pulsar.Core.Services
                 var originalMessage = await _consumer.Receive(cancellationToken);
                 var witiQMessage = MapToWitiQMessage(originalMessage);
 
-                // Guardar referencia al mensaje original para acknowledgment
                 _messageCache.TryAdd(witiQMessage.MessageId, originalMessage);
 
                 _logger.LogDebug("Message received from topic: {Topic}, subscription: {Subscription}, MessageId: {MessageId}",

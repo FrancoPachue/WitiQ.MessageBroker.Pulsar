@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WitiQ.MessageBroker.Pulsar.Core", "WitiQ.MessageBroker.Pulsar\WitiQ.MessageBroker.Pulsar.Core.csproj", "{07F2BF87-8A97-44CD-85F0-5E705AECFF13}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WitiQ.MessageBroker.Pulsar.Extensions.DependencyInjection", "WitiQ.MessageBroker.Pulsar.Extensions.DependencyInjection\WitiQ.MessageBroker.Pulsar.Extensions.DependencyInjection.csproj", "{33A70946-51E1-41FF-ACB7-99B7F9D9C690}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WitiQ.MessageBroker.Pulsar.Extensions.Hosting", "WitiQ.MessageBroker.Pulsar.Extensions.Hosting\WitiQ.MessageBroker.Pulsar.Extensions.Hosting.csproj", "{4031A21D-3C24-4C5B-84CE-EA8C7747BA25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AE3E600F-D46F-43CB-84E9-77476160704E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WitiQ.MessageBroker.Pulsar.Test", "WitiQ.MessageBroker.Pulsar.Test\WitiQ.MessageBroker.Pulsar.Test.csproj", "{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,10 @@ Global
 		{4031A21D-3C24-4C5B-84CE-EA8C7747BA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4031A21D-3C24-4C5B-84CE-EA8C7747BA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4031A21D-3C24-4C5B-84CE-EA8C7747BA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +45,7 @@ Global
 		{07F2BF87-8A97-44CD-85F0-5E705AECFF13} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{33A70946-51E1-41FF-ACB7-99B7F9D9C690} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4031A21D-3C24-4C5B-84CE-EA8C7747BA25} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C05F2AC5-C2F4-4A1B-BB2C-27D6BD7ED944} = {AE3E600F-D46F-43CB-84E9-77476160704E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8342AF2A-05A7-42E5-859C-DF4A1001B436}
